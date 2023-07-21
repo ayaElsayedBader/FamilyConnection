@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:untitled/view/screen_nav/home%20_main_screen.dart';
 import 'control/social/social_cubit.dart';
 import 'core/bloc_obs.dart';
+import 'package:untitled/view/authentication/login/login_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
           )
         ],
         child: MaterialApp(
-            home: const HomeScreen(),
+            home: const  LoginPage(),
             debugShowCheckedModeBanner: false,
             theme: ThemeData(
               colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
